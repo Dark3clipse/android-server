@@ -6,4 +6,3 @@ services:
     restart: always
     ports:
       - 5900:5900
-      - 5555:5555
