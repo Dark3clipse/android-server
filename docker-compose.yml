@@ -2,10 +2,10 @@ version: "3.7"
 
 services:
   android:
-    image: budtmo/docker-android-x86-8.1
+    image: tracer0tong/android-emulator:latest
     restart: always
     privileged: true
     environment:
-      - DEVICE="Nexus 5"
+      - EMULATOR=android-19
     ports:
-      - 6080:6080
+      - 5900:5900
