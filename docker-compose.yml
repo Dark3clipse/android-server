@@ -2,7 +2,10 @@ version: "3.7"
 
 services:
   android:
-    image: softsam/android-23:latest
+    image: budtmo/docker-android-x86-8.1
     restart: always
+    privileged: true
+    environment:
+      - DEVICE="Samsung Galaxy S6"
     ports:
-      - 5900:5900
+      - 6080:6080
