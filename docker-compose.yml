@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   android:
-    image: budtmo/docker-android-x86-8.1
+    image: budtmo/docker-android-x86-7.1.1
     restart: always
     privileged: true
     environment:
