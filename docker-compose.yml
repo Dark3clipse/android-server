@@ -6,6 +6,6 @@ services:
     restart: always
     privileged: true
     environment:
-      - DEVICE="Samsung Galaxy S6"
+      - DEVICE="Nexus 5"
     ports:
       - 6080:6080
