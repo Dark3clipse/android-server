@@ -16,5 +16,4 @@ services:
       - android-net
 networks:
   android-net:
-    driver: overlay
-    attachable: true
+    driver: local
