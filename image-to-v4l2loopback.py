@@ -50,8 +50,8 @@ if __name__=="__main__":
 	devName = '/dev/video2'
 	if len(sys.argv) >= 2:
 		devName = sys.argv[1]
-	width = 640
-	height = 512
+	width = 256
+	height = 256
 	if not os.path.exists(devName):
 		print "Warning: device does not exist",devName
 	device = open(devName, 'wr')
