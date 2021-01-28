@@ -1,11 +1,16 @@
-version: "3.7"
+version: "3.8"
 
 services:
   android:
-    image: tracer0tong/android-emulator:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: shadash/android-emulator:latest
     restart: always
     privileged: true
     environment:
       - EMULATOR=android-19
+    volumes:
+    - /dev/video0:/dev/video0
     ports:
-      - 5900:5900
+      - 5902:5900
