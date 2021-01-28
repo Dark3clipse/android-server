@@ -15,7 +15,7 @@ sudo checkinstall
 sudo ldconfig /usr/local/lib
 
 # install other dependencies
-sudo apt-get install v4l2loopback-dkms python python-pip -y
+sudo apt-get install v4l2loopback-dkms python python-pip ffmpeg -y
 
 sudo modprobe v4l2loopback
 pip install scipy pillow v4l2 numpy
