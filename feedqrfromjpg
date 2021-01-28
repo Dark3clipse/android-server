@@ -1,2 +1,0 @@
-#!/bin/bash
-ffmpeg -loop 1 -re -i qr.jpg -f v4l2 -vcodec rawvideo -pix_fmt yuv420p /dev/video0

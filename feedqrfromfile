@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo python ./image-to-v4l2loopback.py /dev/video0
