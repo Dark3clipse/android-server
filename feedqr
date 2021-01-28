@@ -1,3 +1,4 @@
 #!/bin/bash
 wget $1 -O qr.png
+convert qr.jpg -gravity center -background white -extent 640x480  qr.jpg
 sudo python ./image-to-v4l2loopback.py /dev/video0
