@@ -8,7 +8,7 @@ sudo apt-get install build-essential checkinstall && sudo apt-get build-dep imag
 sudo wget http://www.imagemagick.org/download/ImageMagick.tar.gz
 sudo tar xzvf ImageMagick.tar.gz
 cd ImageMagick-7.0.10-60/
-sudo ./configure
+sudo ./configure --enable-shared --with-png=yes
 sudo make clean
 sudo make
 sudo checkinstall
